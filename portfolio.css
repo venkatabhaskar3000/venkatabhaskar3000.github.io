@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    z-index: 100;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(0deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(0deg);
+}
+
+.wave .shape-fill{
+    fill: url(#MyGradient);
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40rem;
+}
+.resume{
+    font-size: 2rem;
+    margin: 1rem;
+}
+.name{
+ font-size: 6rem;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    height: 24rem;
+    width: 24rem;
+    border-radius: 50%;
+}
+.sub{
+    font-size: 1.4rem;
+}
+.main-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:1105px){
+    .name{
+        font-size: 5rem;
+        max-width: fit-content;
+    }
+    .main-name{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+}
+@media screen and (max-width : 850px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+        font-size: 4.2rem;
+    }
+    .sub{
+        font-size: 1.1rem;
+    }
+    img{
+        height: 19rem;
+        width: 19rem;
+        margin-bottom: 7rem;
+    }
+    .main-name{
+        width: 34rem;
+        margin-bottom: 2.1rem;
+    }
+}
+    @media screen and (max-width:550px){
+        .main-name{
+            width: 24rem;
+            margin-bottom: 1.7rem;
+        }
+        img{
+            height: 17rem;
+            width: 17rem;
+            margin-bottom: 3rem;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+            font-size: 3.2rem;
+        }
+        .sub{
+            font-size: 1.1rem;
+        }
+        .main-name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width:390px){
+        .main-name{
+            width: 20rem;
+            margin-bottom: 1.3rem;
+        }
+        img{
+            height: 16rem;
+            width: 16rem;
+            margin-bottom: 2.5rem;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .name{
+            font-size: 2.5rem;
+        }
+        .sub{
+            font-size: 1rem;
+        }
+        .main-name{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+/* home page ends  */
+
+/* skills page starts */
+.skills{
+    height: 100vh;
+    width: 100%;
+    background: white
+}
+.skillset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 36rem;
+    height: 15rem;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 8px 8px 32px 0 rgba( 41, 145, 177, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+margin: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.icons{
+    height: 3rem;
+    width: 3rem;
+}
+.subname{
+   font-size: 3rem;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.skill-para{
+    font-size: 3.6rem;
+    box-shadow: 10px 10px 10px rgb(233, 231, 231);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0.1rem;
+    width: 100%;
+}
+.icons-con{
+    display: flex;
+}
+.lang-con{
+    font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 1rem;
+}
+@media  screen and (max-width:890px) {
+    .skill-para{
+        font-size: 3.1rem;
+        margin: 1.4rem;
+    }
+    .subname{
+font-size: 2rem;
+    }
+    .icons{
+        height: 2rem;
+    width: 2rem;
+    }
+    .icons-con{
+        margin: 0;
+        height: 3rem;
+    }
+}
+@media  screen and (max-width:700px) {
+    .skill-para{
+        font-size: 2.4rem;
+        margin: 1rem;
+    }
+    .subname{
+font-size: 2rem;
+    }
+    .icons{
+        height: 2rem;
+    width: 2rem;
+    }
+    .icons-con{
+        margin: 0;
+        height: 3rem;
+    }
+    .box{
+        width: 29rem;
+    height: 17rem;
+    }
+    .lang-con{
+        font-size: 1.6rem;
+    }
+}
+@media  screen and (max-width:560px) {
+    .skill-para{
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+    .subname{
+font-size: 1.7rem;
+    }
+    .icons{
+        height: 1.7rem;
+    width: 1.7rem;
+    }
+    .icons-con{
+        margin: 0;
+        height: 2.4rem;
+    }
+    .box{
+        width: 22rem;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .lang-con{
+        font-size: 1.2rem;
+    }
+}
+
+/* skills page ends */
+
+/* achievements and experiences section begins */
+.achieve-experi{
+    height: 100vh;
+    width: 100%;
+}
+#eddie{
+    height: 6rem;
+    width: 6rem;
+}
+#hacktoberfest{
+    height: 6rem;
+    width: 6rem;
+}
+.ach-exp{
+    font-size: 3.6rem;
+    box-shadow: 10px 10px 10px rgb(233, 231, 231);
+    margin: 0.1rem;
+    width: 100%;
+}
+.eddeihub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.eddeihub{
+    position: relative;
+    right: 2.9rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+.list{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.hacktoberfest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#name-org,#name-org2{
+font-size: 1.3rem;
+}
+#date,#date2{
+    font-size: 1rem;
+}
+.eddie-img{
+    margin: 1rem;
+}
+.hackto-img{
+    margin: 1rem;
+}
+@media screen and (max-width:1200px){
+    .eddeihub{
+        position: relative;
+        right: 1.2rem;
+    }
+}
+@media screen and (max-width:855px){
+    .eddeihub{
+        position: relative;
+        right: 0.8rem;
+    }
+    #eddie{
+        height: 4rem;
+        width: 4rem;
+    }
+    #hacktoberfest{
+        height: 4rem;
+        width: 4rem;
+    }
+    .ach-exp{
+        font-size: 2.4rem;
+        margin: 0;
+    }
+    .mkk{
+        font-size: 1.3rem;
+    }
+    .hoverss{
+        width: 42rem;
+        height: 20rem;
+    }
+    .list{
+        margin: 0rem;
+    }
+    .eddie-img{
+        margin-bottom: 0;
+        height: 5rem;
+    }
+    .hackto-img{
+        height: 5rem;
+    }
+
+    }
+    @media screen and (max-width:690px){
+        .eddeihub{
+            position: relative;
+            right: 0.8rem;
+        }
+        #eddie{
+            height: 3rem;
+            width: 3rem;
+        }
+        #hacktoberfest{
+            height: 3rem;
+            width: 3rem;
+        }
+        .ach-exp{
+            font-size: 2rem;
+            margin: 0;
+        }
+        .mkk{
+            font-size: 1rem;
+        }
+        .hoverss{
+            width: 32rem;
+            height: 24rem;
+        }
+        .list{
+            margin: 0rem;
+        }
+        .eddie-img{
+            margin-bottom: 0;
+            height: 5rem;
+        }
+        .hackto-img{
+            height: 5rem;
+        }
+    }
+    @media screen and (max-width:515px){
+        .eddeihub{
+            position: relative;
+            right: 0.4rem;
+        }
+        .hoverss{
+            width: 23rem;
+            height: 24rem;
+        }
+    }
+
+/* achievements and experiences section ends */
+
+/* socials section starts */
+.socials{
+    height: 100vh;
+    width: 100%;
+}
+.s{
+    height: 6rem;
+    width: 6rem;
+}
+.arr-soc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1.2rem;
+}
+.ending{
+    position: relative;
+    top: 19.3rem;
+    left: 0rem;
+    background: rgb(43, 41, 41);
+    color: white;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#love{
+    color: gold;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
