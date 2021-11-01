@@ -294,6 +294,7 @@ font-size: 1.7rem;
     box-shadow: 10px 10px 10px rgb(233, 231, 231);
     margin: 0.1rem;
     width: 100%;
+    z-index: 100;
 }
 .eddeihub{
     display: flex;
